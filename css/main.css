@@ -68,6 +68,7 @@ input[type="text"] {
 .top-menu > ul > li > a > i {
     padding-right: 10px;
 }
+
 .top-menu > ul > li > a {
     font-size: 16px;
     font-weight: normal;
@@ -78,9 +79,17 @@ input[type="text"] {
 }
 .top-menu > ul > li {
     border-left: 1px solid #e3e3e3;
+    margin-right:-5px;
     padding: 16px;
+
 }
-.active {
+
+.top-menu>ul>li.active,.top-menu>ul>li:hover {
+    background: url("../img/menu_gradient.png") repeat-x;
+
+}
+
+.top-menu>ul>li.active a,.top-menu>ul>li:hover a{
     border-bottom: 4px solid #eebe00;
 }
 
@@ -247,6 +256,7 @@ div .img-width {
 .footer-menu-right > ul {
     float: right;
 }
+
 .footer-menu-right ul > li > a {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -286,3 +296,10 @@ div .img-width {
     cursor: pointer;
     font-family: georgia;
 }
+.footer-icon>ul > li:first-child{
+    font-size: 11px;
+    color: #888888 !important;
+    cursor: pointer;
+    font-family: georgia;
+}
+

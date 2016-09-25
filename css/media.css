@@ -147,6 +147,14 @@
     .footer-icon{
         width: 100%;
     }
+    .footer-icon ul {
+        float:none;
+        text-align:center;
+    }
+    .footer-bottom-text > h3 {
+
+        text-align: center;
+    }
 }
 @media only screen and (max-width: 568px) {
     .top-menu > ul > li {
