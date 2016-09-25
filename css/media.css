@@ -1,15 +1,46 @@
 @media only screen and (min-width: 1200px) {}
-@media only screen and (max-width: 1199px) {}
-@media only screen and (max-width: 1100px) {}
-@media only screen and (max-width: 1060px) {}
-@media only screen and (max-width: 1024px) {}
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1199px) {
     .heading-border h3 {
-        color: #8c8c8c;
-        font-size: 16px;
+        font-size: 17px;
+    }
+    .heading-border-operate h3 {
+        font-size: 17px;
+
+    }
+    .footer-menu-left{
+        width:100%;
+        text-align:center;
+    }
+    .footer-menu-right{
+        width:100%;
+        text-align:center;
+    }
+    .footer-menu-right > ul {
+        float:none;
     }
 }
-@media only screen and (max-width: 980px) {}
+@media only screen and (max-width: 1100px) {}
+@media only screen and (max-width: 1060px) {}
+@media only screen and (max-width: 1024px) {
+    .heading-border-operate h3 {
+        font-size: 17px;
+    }
+    .setting_responsive{
+        width:50%;
+    }
+    .announcement_responsive{
+        width:100%;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .heading-border-operate h3 {
+        font-size: 20px;
+    }
+
+}
+@media only screen and (max-width: 980px) {
+
+}
 @media only screen and (max-width: 900px) {}
 @media only screen and (max-width: 980px) {
     .navbar-nav > li > a {
@@ -36,16 +67,15 @@
     .top-menu {
         float: right;
     }
+    div .img-width {
+        width: 100%;
+    }
 }
 @media only screen and (min-width: 767px) {
     .menu-color {
         display:none;
     }
-    /*.navbar-nav > li > a {
 
-            font-size: 13px !important;
-
-        }*/
 }
 @media only screen and (max-width: 767px) {
     .footer-menu-right > ul {
@@ -66,6 +96,21 @@
     }
     .navbar-default .navbar-brand {
         color: #fff;
+    }
+    .sector_mobile{
+        width:50%;
+    }
+    .heading-border-operate h3 {
+        font-size: 20px;
+    }
+    .setting_responsive{
+        width:100%;
+    }
+    .announcement_responsive{
+        width:100%;
+    }
+    div .img-width {
+        width: 100%;
     }
 }
 @media only screen and (max-width: 667px) {
@@ -92,6 +137,15 @@
     }
     .top-menu {
         float: left;
+    }
+    .sector_mobile{
+        width:100%;
+    }
+    .footer-bottom-text{
+        width: 100%;
+    }
+    .footer-icon{
+        width: 100%;
     }
 }
 @media only screen and (max-width: 568px) {
