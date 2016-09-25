@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Microsave</title>
+
+    <!-- Bootstrap -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body ng-app="Microsave" ng-cloak>
+<header class="top_header">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-3 ">
+                <img class="img-responsive" src="img/logo.png">
+            </div>
+            <div class="col-md-8 col-sm-9">
+                <nav class="top-menu">
+                    <ul class="list-inline">
+                        <li><a href="#" class="active"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>About Us </a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i>Blog</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>Contact</a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+
+<nav class="navbar navbar-default">
+    <div class="container" bs-collapse start-collapsed="true">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" bs-collapse-toggle aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand hidden-lg hidden-md  menu-color" href="#">Menu</a>
+        </div>
+
+
+        <div class="collapse navbar-collapse" bs-collapse-target>
+            <ul class="nav navbar-nav">
+                <li><a href="#">Sector we work in <span class="sr-only">(current)</span></a>
+                </li>
+                <li><a href="#">Services</a>
+                </li>
+                <li><a href="#">Clients</a>
+                </li>
+                <li><a href="#">Research & Reports</a>
+                </li>
+
+            </ul>
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" class="form-control search-box" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default search-btn"><i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </form>
+
+            </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+
+<section class="content-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+
+                <front-cover front-image="img/img1.jpg" front-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"></front-cover>
+
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12">
+                <div class="heading-border">
+                    <div class="heading-text">
+                        <h3>What we do? </h3>
+                    </div>
+                    <div class="heading-icon">
+
+                        <p class="icon-setting"></p>
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="content-para">
+                    <p>MicroSave is a diversified development consultancy that works to better the lives of low income people
+                    </p>
+
+                    <p>MicroSave is a diversified development consultancy that works to better the lives of low income people MicroSave is a diversified development consultancy that works to better the lives of low income people</p>
+                </div>
+                <div class="heading-border-operate">
+                    <div class="heading-text">
+                        <h3>Where we Operate? </h3>
+                    </div>
+                    <div class="heading-icon">
+
+                        <p class="icon-map-pin"></p>
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12">
+                <div class="heading-border">
+                    <div class="heading-text">
+                        <h3>Announcement </h3>
+                    </div>
+
+                    <div class="heading-icon">
+
+                        <p class="icon-speaker"></p>
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="announcement-para" ng-controller="announcementCtrl">
+                    <announcement ng-repeat="d in data" announcement-text={{d.announcement_text}} announcement-by={{d.announcement_by}} announcement-date={{d.announcement_date}}></announcement>
+                    <a href="#">View More</a>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- #row -->
+
+    </div>
+    <!-- #container -->
+
+
+</section>
+<!-- #content-area -->
+
+
+<section class="service-section" ng-controller="serviceCtrl">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Sectors we work in</h1>
+            </div>
+
+            <sector-work ng-repeat="s in service" content-text={{s.content_text}} content-image={{s.content_image}}></sector-work>
+
+        </div>
+        <!-- #row -->
+    </div>
+    <!-- #container -->
+
+</section>
+
+<section class="map_section">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12">
+                <h2>Making a difference, Across Borders & Nations</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad </p>
+                <img class="img-responsive" src="img/map.jpg">
+
+            </div>
+
+        </div>
+        <!-- #row -->
+
+    </div>
+    <!-- #container -->
+</section>
+<!-- #map section -->
+
+<section class="footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12 footer-menu-left">
+                <ul class="list-inline">
+                    <li class="menu-active"><a href="#">Home</a>
+                    </li>
+                    <li><a href="#">|</a>
+                    </li>
+                    <li><a href="#">Services</a>
+                    </li>
+                    <li><a href="#">|</a>
+                    </li>
+                    <li><a href="#">About</a>
+                    </li>
+                    <li><a href="#">|</a>
+                    </li>
+                    <li><a href="#">Blog</a>
+                    </li>
+                    <li><a href="#">|</a>
+                    </li>
+                    <li><a href="#">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 footer-menu-right">
+                <ul class="list-inline">
+                    <li><a href="#">Terms of use</a>
+                    </li>
+                    <li><a href="#">|</a>
+                    </li>
+                    <li><a href="#">Privacy</a>
+                    </li>
+                    <li><a href="#">|</a>
+                    </li>
+                    <li><a href="#">Code of business conduct & ethics</a>
+                    </li>
+                    <li><a href="#">|</a>
+                    </li>
+                    <li><a href="#">SiteMap</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+
+            <hr class="hr-line" />
+            <div class="col-md-2 col-xs-12 col-sm-4 footer-bottom-text">
+                <h3>MicroSave © 2012 </h3>
+            </div>
+            <div class="col-md-3 col-md-offset-7 col-xs-12 col-sm-8 footer-icon">
+                <span>Follows Us</span>
+                <ul class="list-inline">
+
+                    <li><a href="#"><i class="fa fa-inverse fa-facebook-official fa-2x fb-icon" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-inverse fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-inverse fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- #row -->
+    </div>
+    <!-- #container -->
+</section>
+<!-- #footer_section -->
+<script src="libs/angular/angular.js"></script>
+<script src="libs/angular-strap/dist/angular-strap.min.js"></script>
+<script src="app.js"></script>
+<script src="app/directives/sector-work.js"></script>
+<script src="app/directives/front-cover.js"></script>
+<script src="app/directives/announcement.js"></script>
+<script src="app/controllers/announcement.js"></script>
+<script src="app/controllers/service.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+@media only screen and (min-width: 1200px) {}
+@media only screen and (max-width: 1199px) {}
+@media only screen and (max-width: 1100px) {}
+@media only screen and (max-width: 1060px) {}
+@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 991px) {
+    .heading-border h3 {
+        color: #8c8c8c;
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 980px) {}
+@media only screen and (max-width: 900px) {}
+@media only screen and (max-width: 980px) {
+    .navbar-nav > li > a {
+        font-size: 13px !important;
+    }
+}
+@media only screen and (max-width: 910px) {}
+@media only screen and (max-width: 880px) {}
+@media only screen and (max-width: 800px) {}
+@media only screen and (max-width: 768px) {
+    .footer-menu-right > ul {
+        float: none;
+        text-align: center;
+    }
+    .footer-menu-left ul {
+        text-align: center;
+    }
+    .top-menu > ul > li {
+        padding: 9px;
+    }
+    .top-menu > ul > li > a {
+        font-size: 13px;
+    }
+    .top-menu {
+        float: right;
+    }
+}
+@media only screen and (min-width: 767px) {
+    .menu-color {
+        display:none;
+    }
+    /*.navbar-nav > li > a {
+
+            font-size: 13px !important;
+
+        }*/
+}
+@media only screen and (max-width: 767px) {
+    .footer-menu-right > ul {
+        float: none;
+        text-align: center;
+    }
+    .footer-menu-left ul {
+        text-align: center;
+    }
+    .top-menu > ul > li {
+        padding: 15px;
+    }
+    .top-menu > ul > li > a {
+        font-size: 18px;
+    }
+    .top-menu {
+        float: left;
+    }
+    .navbar-default .navbar-brand {
+        color: #fff;
+    }
+}
+@media only screen and (max-width: 667px) {
+    .top-menu {
+        float: left;
+    }
+}
+@media only screen and (max-width: 640px) {}
+@media only screen and (max-width: 600px) {
+    div .img-width {
+        width: 100%;
+    }
+    .menu-color {
+        color: #fff !important;
+    }
+    .footer-menu-right > ul {
+        float: none !important;
+    }
+    .top-menu > ul > li {
+        padding: 15px;
+    }
+    .top-menu > ul > li > a {
+        font-size: 19px;
+    }
+    .top-menu {
+        float: left;
+    }
+}
+@media only screen and (max-width: 568px) {
+    .top-menu > ul > li {
+        padding: 7px;
+    }
+    .top-menu > ul > li > a {
+        font-size: 17px;
+    }
+    .top-menu {
+        float: left;
+    }
+}
+@media only screen and (max-width: 536px) {}
+@media only screen and (max-width: 508px) {}
+@media only screen and (max-width: 480px) {
+    .top-menu > ul > li {
+        padding: 7px;
+    }
+    .top-menu > ul > li > a {
+        font-size: 13px;
+    }
+    .top-menu {
+        float: left;
+    }
+}
+@media only screen and (max-width: 414px) {}
+@media only screen and (max-width: 400px) {}
+@media only screen and (max-width: 360px) {}
+@media only screen and (max-width: 340px) {}
+@media only screen and (max-width: 320px) {}

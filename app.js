@@ -1,0 +1,1 @@
+var Microsave = angular.module("Microsave",['mgcrea.ngStrap']);
